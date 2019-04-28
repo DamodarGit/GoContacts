@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoContacts/Components/ContactList/ContactListInteractor.swift"
-            timestampString = "578050289.040203"
+            timestampString = "578173261.0709341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoContacts/Components/ContactList/ContactListInteractor.swift"
-            timestampString = "578050289.040356"
+            timestampString = "578173261.07103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
@@ -154,13 +154,109 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoContacts/Components/ContactList/ContactListRouter.swift"
-            timestampString = "578155568.008608"
+            timestampString = "578182149.566249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
             landmarkName = "createModule()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoContacts/Components/ContactEdit/ContactEditView.swift"
+            timestampString = "578182149.566314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "doneButtonAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoContacts/Components/ContactEdit/ContactEditView.swift"
+            timestampString = "578182149.566368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "doneButtonAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoContacts/Components/ContactEdit/ContactEditView.swift"
+            timestampString = "578182149.566421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "doneButtonAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoContacts/Components/ContactList/ContactListView.swift"
+            timestampString = "578182149.566486"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "createListAndUpdateTable()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoContacts.ContactListView.createListAndUpdateTable() -&gt; ()"
+                  moduleName = "GoContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ndamoda/Desktop/GoContacts/GoContacts/Components/ContactList/ContactListView.swift"
+                  timestampString = "578182073.554984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2421">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 () -&gt; () in GoContacts.ContactListView.createListAndUpdateTable() -&gt; ()"
+                  moduleName = "GoContacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ndamoda/Desktop/GoContacts/GoContacts/Components/ContactList/ContactListView.swift"
+                  timestampString = "578182073.556941"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

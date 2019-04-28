@@ -29,7 +29,7 @@ extension ContactFetcher: URLEndPoint {
         case .create: return "/contacts.json"
         case .allContacts: return "/contacts.json"
         case .contactDetails: return "/contacts/{}.json"
-        case .update: return "contacts/{}.json"
+        case .update: return "/contacts/{}.json"
         case .delete: return "/3/police"
         case .image: return "/"
         }

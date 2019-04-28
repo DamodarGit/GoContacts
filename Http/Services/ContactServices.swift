@@ -57,6 +57,17 @@ class ContactServices : APIClient {
             return results
         },completion: completion)
     }
+    
+    func put(_ contact: Contact?, completion: @escaping (Result<Contact?, APIError>) -> ()) {
+        
+        guard let request = ContactFetcher.update.put(parameters:contact,
+                                                              headers: [HTTPHeader.contentType("application/json")]) else { return }
+        
+        fetch(with: request , decode: { json -> Contact? in
+            guard let results = json as? Contact else { return  nil }
+            return results
+        },completion: completion)
+    }
 
     
 }

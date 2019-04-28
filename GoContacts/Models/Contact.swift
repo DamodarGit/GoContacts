@@ -8,13 +8,18 @@
 
 import Foundation
 
-struct Contact: Codable {
-    var first_name: String!
-    var last_name: String!
-    var email: String!
-    var mobile: String!
-    var phone_number: String!
-    var favorite: Bool!
+struct Contact: Codable, Hashable {
+    var first_name: String?
+    var last_name: String?
+    var email: String?
+    var mobile: String?
+    var phone_number: String?
+    var favorite: Bool?
+    var id: Int?
+    var profile_pic:String?
+}
+
+
+struct ContactRequest: Codable {
     var id: Int!
-    var profile_pic:String!
 }

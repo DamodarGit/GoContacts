@@ -17,9 +17,8 @@ final class ContactDetailView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.contact.last_name)
         self.setupViews()
-        presenter?.getInfo(for: self.contact.id)
+        presenter?.getInfo(for: self.contact.id!)
     }
     
     override func viewWillAppear(_ animated: Bool) {

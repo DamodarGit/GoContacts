@@ -22,7 +22,7 @@ final class ContactListRouter: ContactListRouterProtocol {
     }
     
     func showAddContact(on navigationController: UINavigationController) {
-        let contactView = ContactEditRouter.createModule(with: .add)
+        let contactView = ContactEditRouter.createModule(with: .add, contact: nil)
         navigationController.pushViewController(contactView, animated: true)
     }
 }

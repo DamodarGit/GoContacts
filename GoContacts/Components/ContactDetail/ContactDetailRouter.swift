@@ -18,7 +18,7 @@ final class ContactDetailRouter: ContactDetailRouterProtocol {
     }
     
     func showEditView(_ contact: Contact, with navigationController: UINavigationController) {
-        let contactView = ContactEditRouter.createModule(with: .edit)
+        let contactView = ContactEditRouter.createModule(with: .edit, contact: contact)
         navigationController.pushViewController(contactView, animated: true)
     }
     

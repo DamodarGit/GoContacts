@@ -62,6 +62,28 @@ extension URLEndPoint {
         headers.forEach { request.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
         return request
     }
+    
+    func put<T: Encodable>(parameters: T, headers: [HTTPHeader]) -> URLRequest? {
+        var req: URLRequest!
+        do {
+            let data = try JSONEncoder().encode(parameters)
+            let contact  = try? JSONDecoder().decode(Contact.self, from: data)
+            req = self.putRequest(id:contact!.id!)
+        } catch {
+            return nil
+        }
+        
+        guard var request = req else { return nil }
+        request.httpMethod = HTTPMethods.put.rawValue
+        do {
+            request.httpBody = try JSONEncoder().encode(parameters)
+        } catch {
+            return nil
+        }
+        headers.forEach { request.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
+        return request
+    }
+
 }
 
 // extra methonds added
@@ -72,6 +94,15 @@ extension URLEndPoint {
         let request = URLRequest(url: url!)
         return request
     }
+    
+    func putRequest(id: Int) -> URLRequest {
+        let path: String =  self.path.replacingOccurrences(of: "{}", with: String(id))
+        let url =  URL(string: (self.base + path))
+        var request = URLRequest(url: url!)
+        request.httpMethod = "PUT"
+        return request
+    }
+
     
     func from(path : String) -> URLRequest {
         let url =  URL(string: (self.base + path))
