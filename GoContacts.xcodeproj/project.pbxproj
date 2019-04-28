@@ -11,6 +11,7 @@
 		8D48A1AC22740EAB00E98265 /* ImgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1AB22740EAB00E98265 /* ImgeView.swift */; };
 		8D48A1B022741BE500E98265 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1AF22741BE500E98265 /* View.swift */; };
 		8D48A1B2227424E200E98265 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1B1227424E200E98265 /* ContactListCell.swift */; };
+		8D53444222766FE9002E728E /* ContactDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53444122766FE9002E728E /* ContactDetailCell.swift */; };
 		8D7629DB2276296300B6421B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7629DA2276296300B6421B /* TextField.swift */; };
 		8D958892227390AE004AF23F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D958891227390AE004AF23F /* AppDelegate.swift */; };
 		8D958897227390AE004AF23F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D958895227390AE004AF23F /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		8D48A1AB22740EAB00E98265 /* ImgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgeView.swift; sourceTree = "<group>"; };
 		8D48A1AF22741BE500E98265 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		8D48A1B1227424E200E98265 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
+		8D53444122766FE9002E728E /* ContactDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailCell.swift; sourceTree = "<group>"; };
 		8D7629DA2276296300B6421B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		8D95888E227390AE004AF23F /* GoContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D958891227390AE004AF23F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				8D95891422739374004AF23F /* ContactDetailInteractor.swift */,
 				8D95891622739374004AF23F /* ContactDetailRouter.swift */,
 				8D95891022739374004AF23F /* ContactDetailView.swift */,
+				8D53444122766FE9002E728E /* ContactDetailCell.swift */,
 			);
 			path = ContactDetail;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D95895A2273FE4C004AF23F /* APIErrorConstans.swift in Sources */,
+				8D53444222766FE9002E728E /* ContactDetailCell.swift in Sources */,
 				8D95894022739374004AF23F /* ContactListView.swift in Sources */,
 				8D9589582273FE4C004AF23F /* APIConstructor.swift in Sources */,
 				8D3BB728227578FC00B9E4EF /* Button.swift in Sources */,

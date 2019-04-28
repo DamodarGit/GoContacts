@@ -7,6 +7,7 @@ final class ContactDetailView: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var tableDetaila: UITableView!
+    @IBOutlet weak var buttonFavourite: UIButton!
 
     
     var presenter: ContactDetailPresenterProtocol?
@@ -33,9 +34,7 @@ final class ContactDetailView: UIViewController {
         guard let path = self.contact.profile_pic,
             let firstName = self.contact.first_name,
             let lastName = self.contact.last_name
-            else {
-            return
-        }
+            else { return }
 
         self.fullNameLabel.text = firstName + " " + lastName
         self.fullNameLabel.type(.semi_bold)
@@ -61,11 +60,19 @@ final class ContactDetailView: UIViewController {
  
     func createDataDict() {
         
+        guard let favorite = self.contact.favorite else { return }
+       
         self.dataDictionary = Dictionary()
         self.dataDictionary["mobile"] = self.contact.phone_number
         self.dataDictionary["email"] = self.contact.email
         DispatchQueue.main.async {
             self.tableDetaila.reloadData()
+            if favorite {
+                self.buttonFavourite.setBackgroundImage(UIImage(named: "Fav_filled"), for: .normal)
+            }
+            else {
+                self.buttonFavourite.setBackgroundImage(UIImage(named: "Fav"), for: .normal)
+            }
         }
     }
     
@@ -97,12 +104,12 @@ extension ContactDetailView : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DetailContactCell.identifier) as! DetailContactCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ContactDetailCell.identifier) as! ContactDetailCell
         
         let value = Array(self.dataDictionary.values)[indexPath.row]
-        
         let key: String = Array(self.dataDictionary.keys)[indexPath.row]
             cell.configure(key, value: value)
+
         return cell
     }
     
@@ -111,27 +118,3 @@ extension ContactDetailView : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-class DetailContactCell : UITableViewCell {
-    @IBOutlet weak var keyLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
-    
-    
-    static let identifier = "DetailContactCell"
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setup()
-    }
-    
-    func setup() {
-        self.keyLabel.type(.regular)
-        self.keyLabel.textColor = Color.lightGrey
-        self.valueLabel.type(.regular)
-        self.valueLabel.textColor = Color.gray
-    }
-    
-    func configure(_ key : String, value: String)  {
-        self.keyLabel.text = key
-        self.valueLabel.text = value
-    }
-}
