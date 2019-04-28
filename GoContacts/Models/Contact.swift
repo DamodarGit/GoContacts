@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct Contact: Codable {
+    var first_name: String!
+    var last_name: String!
+    var email: String!
+    var mobile: String!
+    var phone_number: String!
+    var favorite: Bool!
+    var id: Int!
+    var profile_pic:String!
+}

@@ -16,8 +16,7 @@ struct StoryBoard {
 struct Controller {
     static var contactList = "ContactListView"
     static var contactDetail = "ContactDetailView"
-    static var editContact = "EditContactView"
-    static var addContact = "AddContactView"
-    
+    static var addOrEdit = "ContactEditView"
+    static var embed = "EmbedNavigationView"
 }
 

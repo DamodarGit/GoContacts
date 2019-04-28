@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct BarButtonTitle {
+    static let cancel = "Cancel"
+    static let group = "Group"
+    static let done = "Done"
+}
+
+enum AddOrEditContactOption {
+    case edit
+    case add
+}

@@ -8,29 +8,32 @@
 
 import UIKit
 
-@IBDesignable
-class Label: UILabel {
-    
-    @IBInspectable var type: Int = 0 {
-        didSet(type) {
-            switch type {
-            case 1:
-                self.textColor = Color.gray
-            default:
-                self.textColor = Color.lightGrey
-            }
+enum FontType {
+    case small
+    case regular
+    case bold
+    case semi_bold
+}
+
+extension UILabel {
+    func type(_ type: FontType) {
+        switch type {
+        case .bold:
+            self.font = Font.su_bold
+        case .regular:
+            self.font = Font.su_regular
+        case .semi_bold:
+            self.font = Font.su_semi_bold
+        case .small:
+            self.font = Font.su_small
         }
     }
-    
+}
+
+
+class Label: UILabel {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.font = Font.su_regular
-
-        switch self.type {
-        case 1:
-            self.textColor = Color.gray
-        default:
-            self.textColor = Color.lightGrey
-        }
     }
 }

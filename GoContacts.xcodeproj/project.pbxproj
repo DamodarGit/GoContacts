@@ -7,13 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3BB728227578FC00B9E4EF /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3BB727227578FC00B9E4EF /* Button.swift */; };
+		8D48A1AC22740EAB00E98265 /* ImgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1AB22740EAB00E98265 /* ImgeView.swift */; };
+		8D48A1B022741BE500E98265 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1AF22741BE500E98265 /* View.swift */; };
+		8D48A1B2227424E200E98265 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48A1B1227424E200E98265 /* ContactListCell.swift */; };
+		8D7629DB2276296300B6421B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7629DA2276296300B6421B /* TextField.swift */; };
 		8D958892227390AE004AF23F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D958891227390AE004AF23F /* AppDelegate.swift */; };
-		8D958894227390AE004AF23F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D958893227390AE004AF23F /* ViewController.swift */; };
 		8D958897227390AE004AF23F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D958895227390AE004AF23F /* Main.storyboard */; };
 		8D958899227390AE004AF23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D958898227390AE004AF23F /* Assets.xcassets */; };
 		8D95889C227390AE004AF23F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D95889A227390AE004AF23F /* LaunchScreen.storyboard */; };
 		8D9588A7227390AE004AF23F /* GoContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9588A6227390AE004AF23F /* GoContactsTests.swift */; };
 		8D9588B2227390AE004AF23F /* GoContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9588B1227390AE004AF23F /* GoContactsUITests.swift */; };
+		8D95893622739374004AF23F /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D95890822739374004AF23F /* SFUIText-Regular.ttf */; };
+		8D95893722739374004AF23F /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D95890922739374004AF23F /* SFUIText-Bold.ttf */; };
+		8D95893822739374004AF23F /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D95890A22739374004AF23F /* SFUIText-Semibold.ttf */; };
+		8D95893922739374004AF23F /* ContactDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95890E22739374004AF23F /* ContactDetailPresenter.swift */; };
+		8D95893A22739374004AF23F /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891022739374004AF23F /* ContactDetailView.swift */; };
+		8D95893B22739374004AF23F /* ContactDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891222739374004AF23F /* ContactDetailProtocols.swift */; };
+		8D95893C22739374004AF23F /* ContactDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891422739374004AF23F /* ContactDetailInteractor.swift */; };
+		8D95893D22739374004AF23F /* ContactDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891622739374004AF23F /* ContactDetailRouter.swift */; };
+		8D95893F22739374004AF23F /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891A22739374004AF23F /* ContactListPresenter.swift */; };
+		8D95894022739374004AF23F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891C22739374004AF23F /* ContactListView.swift */; };
+		8D95894122739374004AF23F /* ContactListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95891E22739374004AF23F /* ContactListProtocols.swift */; };
+		8D95894222739374004AF23F /* ContactListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892022739374004AF23F /* ContactListInteractor.swift */; };
+		8D95894322739374004AF23F /* ContactListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892222739374004AF23F /* ContactListRouter.swift */; };
+		8D95894422739374004AF23F /* ContactEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892522739374004AF23F /* ContactEditPresenter.swift */; };
+		8D95894522739374004AF23F /* ContactEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892722739374004AF23F /* ContactEditView.swift */; };
+		8D95894622739374004AF23F /* ContactEditProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892922739374004AF23F /* ContactEditProtocols.swift */; };
+		8D95894722739374004AF23F /* ContactEditInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892B22739374004AF23F /* ContactEditInteractor.swift */; };
+		8D95894822739374004AF23F /* ContactEditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892D22739374004AF23F /* ContactEditRouter.swift */; };
+		8D95894922739374004AF23F /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95892F22739374004AF23F /* Label.swift */; };
+		8D95894A22739374004AF23F /* Appearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95893022739374004AF23F /* Appearence.swift */; };
+		8D95894B22739374004AF23F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95893122739374004AF23F /* Fonts.swift */; };
+		8D95894C22739374004AF23F /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95893322739374004AF23F /* ViewConstants.swift */; };
+		8D95894D22739374004AF23F /* ColorConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95893422739374004AF23F /* ColorConstans.swift */; };
+		8D95894E22739374004AF23F /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95893522739374004AF23F /* StoryboardConstants.swift */; };
+		8D95895122739C6F004AF23F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95895022739C6F004AF23F /* Contact.swift */; };
+		8D9589572273FE4C004AF23F /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9589532273FE4C004AF23F /* HttpHandler.swift */; };
+		8D9589582273FE4C004AF23F /* APIConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9589542273FE4C004AF23F /* APIConstructor.swift */; };
+		8D9589592273FE4C004AF23F /* UrlServiceConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9589552273FE4C004AF23F /* UrlServiceConstans.swift */; };
+		8D95895A2273FE4C004AF23F /* APIErrorConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9589562273FE4C004AF23F /* APIErrorConstans.swift */; };
+		8D95895D2273FE54004AF23F /* ContactServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D95895C2273FE54004AF23F /* ContactServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +68,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3BB727227578FC00B9E4EF /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		8D48A1AB22740EAB00E98265 /* ImgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgeView.swift; sourceTree = "<group>"; };
+		8D48A1AF22741BE500E98265 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		8D48A1B1227424E200E98265 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
+		8D7629DA2276296300B6421B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		8D95888E227390AE004AF23F /* GoContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D958891227390AE004AF23F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D958893227390AE004AF23F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D958896227390AE004AF23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D958898227390AE004AF23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D95889B227390AE004AF23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +85,36 @@
 		8D9588AD227390AE004AF23F /* GoContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9588B1227390AE004AF23F /* GoContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoContactsUITests.swift; sourceTree = "<group>"; };
 		8D9588B3227390AE004AF23F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D95890822739374004AF23F /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		8D95890922739374004AF23F /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		8D95890A22739374004AF23F /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
+		8D95890E22739374004AF23F /* ContactDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailPresenter.swift; sourceTree = "<group>"; };
+		8D95891022739374004AF23F /* ContactDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		8D95891222739374004AF23F /* ContactDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailProtocols.swift; sourceTree = "<group>"; };
+		8D95891422739374004AF23F /* ContactDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailInteractor.swift; sourceTree = "<group>"; };
+		8D95891622739374004AF23F /* ContactDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailRouter.swift; sourceTree = "<group>"; };
+		8D95891A22739374004AF23F /* ContactListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPresenter.swift; sourceTree = "<group>"; };
+		8D95891C22739374004AF23F /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		8D95891E22739374004AF23F /* ContactListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListProtocols.swift; sourceTree = "<group>"; };
+		8D95892022739374004AF23F /* ContactListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListInteractor.swift; sourceTree = "<group>"; };
+		8D95892222739374004AF23F /* ContactListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListRouter.swift; sourceTree = "<group>"; };
+		8D95892522739374004AF23F /* ContactEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEditPresenter.swift; sourceTree = "<group>"; };
+		8D95892722739374004AF23F /* ContactEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEditView.swift; sourceTree = "<group>"; };
+		8D95892922739374004AF23F /* ContactEditProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEditProtocols.swift; sourceTree = "<group>"; };
+		8D95892B22739374004AF23F /* ContactEditInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEditInteractor.swift; sourceTree = "<group>"; };
+		8D95892D22739374004AF23F /* ContactEditRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEditRouter.swift; sourceTree = "<group>"; };
+		8D95892F22739374004AF23F /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		8D95893022739374004AF23F /* Appearence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearence.swift; sourceTree = "<group>"; };
+		8D95893122739374004AF23F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8D95893322739374004AF23F /* ViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		8D95893422739374004AF23F /* ColorConstans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstans.swift; sourceTree = "<group>"; };
+		8D95893522739374004AF23F /* StoryboardConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		8D95895022739C6F004AF23F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8D9589532273FE4C004AF23F /* HttpHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
+		8D9589542273FE4C004AF23F /* APIConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstructor.swift; sourceTree = "<group>"; };
+		8D9589552273FE4C004AF23F /* UrlServiceConstans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlServiceConstans.swift; sourceTree = "<group>"; };
+		8D9589562273FE4C004AF23F /* APIErrorConstans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorConstans.swift; sourceTree = "<group>"; };
+		8D95895C2273FE54004AF23F /* ContactServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +145,7 @@
 		8D958885227390AD004AF23F = {
 			isa = PBXGroup;
 			children = (
+				8D9589522273FE4C004AF23F /* Http */,
 				8D958890227390AE004AF23F /* GoContacts */,
 				8D9588A5227390AE004AF23F /* GoContactsTests */,
 				8D9588B0227390AE004AF23F /* GoContactsUITests */,
@@ -97,8 +166,12 @@
 		8D958890227390AE004AF23F /* GoContacts */ = {
 			isa = PBXGroup;
 			children = (
+				8D95894F22739C62004AF23F /* Models */,
+				8D95890722739374004AF23F /* Resources */,
+				8D95890B22739374004AF23F /* Components */,
+				8D95893222739374004AF23F /* Helpers */,
+				8D95892E22739374004AF23F /* UI */,
 				8D958891227390AE004AF23F /* AppDelegate.swift */,
-				8D958893227390AE004AF23F /* ViewController.swift */,
 				8D958895227390AE004AF23F /* Main.storyboard */,
 				8D958898227390AE004AF23F /* Assets.xcassets */,
 				8D95889A227390AE004AF23F /* LaunchScreen.storyboard */,
@@ -123,6 +196,115 @@
 				8D9588B3227390AE004AF23F /* Info.plist */,
 			);
 			path = GoContactsUITests;
+			sourceTree = "<group>";
+		};
+		8D95890722739374004AF23F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D95890822739374004AF23F /* SFUIText-Regular.ttf */,
+				8D95890922739374004AF23F /* SFUIText-Bold.ttf */,
+				8D95890A22739374004AF23F /* SFUIText-Semibold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8D95890B22739374004AF23F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D95890C22739374004AF23F /* ContactDetail */,
+				8D95891822739374004AF23F /* ContactList */,
+				8D95892322739374004AF23F /* ContactEdit */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8D95890C22739374004AF23F /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8D95891222739374004AF23F /* ContactDetailProtocols.swift */,
+				8D95890E22739374004AF23F /* ContactDetailPresenter.swift */,
+				8D95891422739374004AF23F /* ContactDetailInteractor.swift */,
+				8D95891622739374004AF23F /* ContactDetailRouter.swift */,
+				8D95891022739374004AF23F /* ContactDetailView.swift */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		8D95891822739374004AF23F /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				8D95891E22739374004AF23F /* ContactListProtocols.swift */,
+				8D95891A22739374004AF23F /* ContactListPresenter.swift */,
+				8D95892022739374004AF23F /* ContactListInteractor.swift */,
+				8D95892222739374004AF23F /* ContactListRouter.swift */,
+				8D95891C22739374004AF23F /* ContactListView.swift */,
+				8D48A1B1227424E200E98265 /* ContactListCell.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		8D95892322739374004AF23F /* ContactEdit */ = {
+			isa = PBXGroup;
+			children = (
+				8D95892922739374004AF23F /* ContactEditProtocols.swift */,
+				8D95892522739374004AF23F /* ContactEditPresenter.swift */,
+				8D95892B22739374004AF23F /* ContactEditInteractor.swift */,
+				8D95892D22739374004AF23F /* ContactEditRouter.swift */,
+				8D95892722739374004AF23F /* ContactEditView.swift */,
+			);
+			path = ContactEdit;
+			sourceTree = "<group>";
+		};
+		8D95892E22739374004AF23F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D95892F22739374004AF23F /* Label.swift */,
+				8D95893022739374004AF23F /* Appearence.swift */,
+				8D48A1AF22741BE500E98265 /* View.swift */,
+				8D95893122739374004AF23F /* Fonts.swift */,
+				8D48A1AB22740EAB00E98265 /* ImgeView.swift */,
+				8D3BB727227578FC00B9E4EF /* Button.swift */,
+				8D7629DA2276296300B6421B /* TextField.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D95893222739374004AF23F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D95893322739374004AF23F /* ViewConstants.swift */,
+				8D95893422739374004AF23F /* ColorConstans.swift */,
+				8D95893522739374004AF23F /* StoryboardConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8D95894F22739C62004AF23F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D95895022739C6F004AF23F /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D9589522273FE4C004AF23F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				8D9589532273FE4C004AF23F /* HttpHandler.swift */,
+				8D9589542273FE4C004AF23F /* APIConstructor.swift */,
+				8D9589552273FE4C004AF23F /* UrlServiceConstans.swift */,
+				8D9589562273FE4C004AF23F /* APIErrorConstans.swift */,
+				8D95895B2273FE54004AF23F /* Services */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		8D95895B2273FE54004AF23F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D95895C2273FE54004AF23F /* ContactServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D95889C227390AE004AF23F /* LaunchScreen.storyboard in Resources */,
+				8D95893822739374004AF23F /* SFUIText-Semibold.ttf in Resources */,
 				8D958899227390AE004AF23F /* Assets.xcassets in Resources */,
 				8D958897227390AE004AF23F /* Main.storyboard in Resources */,
+				8D95893722739374004AF23F /* SFUIText-Bold.ttf in Resources */,
+				8D95893622739374004AF23F /* SFUIText-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +441,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D958894227390AE004AF23F /* ViewController.swift in Sources */,
+				8D95895A2273FE4C004AF23F /* APIErrorConstans.swift in Sources */,
+				8D95894022739374004AF23F /* ContactListView.swift in Sources */,
+				8D9589582273FE4C004AF23F /* APIConstructor.swift in Sources */,
+				8D3BB728227578FC00B9E4EF /* Button.swift in Sources */,
+				8D95893C22739374004AF23F /* ContactDetailInteractor.swift in Sources */,
+				8D48A1AC22740EAB00E98265 /* ImgeView.swift in Sources */,
+				8D95894122739374004AF23F /* ContactListProtocols.swift in Sources */,
+				8D95894722739374004AF23F /* ContactEditInteractor.swift in Sources */,
+				8D95895122739C6F004AF23F /* Contact.swift in Sources */,
+				8D95894222739374004AF23F /* ContactListInteractor.swift in Sources */,
+				8D95893A22739374004AF23F /* ContactDetailView.swift in Sources */,
+				8D95894D22739374004AF23F /* ColorConstans.swift in Sources */,
+				8D7629DB2276296300B6421B /* TextField.swift in Sources */,
+				8D95894522739374004AF23F /* ContactEditView.swift in Sources */,
+				8D95893B22739374004AF23F /* ContactDetailProtocols.swift in Sources */,
+				8D9589572273FE4C004AF23F /* HttpHandler.swift in Sources */,
+				8D95894822739374004AF23F /* ContactEditRouter.swift in Sources */,
+				8D95894C22739374004AF23F /* ViewConstants.swift in Sources */,
+				8D95893D22739374004AF23F /* ContactDetailRouter.swift in Sources */,
+				8D95895D2273FE54004AF23F /* ContactServices.swift in Sources */,
+				8D95894A22739374004AF23F /* Appearence.swift in Sources */,
+				8D95893F22739374004AF23F /* ContactListPresenter.swift in Sources */,
+				8D95893922739374004AF23F /* ContactDetailPresenter.swift in Sources */,
+				8D95894E22739374004AF23F /* StoryboardConstants.swift in Sources */,
+				8D95894622739374004AF23F /* ContactEditProtocols.swift in Sources */,
+				8D48A1B2227424E200E98265 /* ContactListCell.swift in Sources */,
+				8D95894922739374004AF23F /* Label.swift in Sources */,
+				8D95894B22739374004AF23F /* Fonts.swift in Sources */,
 				8D958892227390AE004AF23F /* AppDelegate.swift in Sources */,
+				8D48A1B022741BE500E98265 /* View.swift in Sources */,
+				8D95894422739374004AF23F /* ContactEditPresenter.swift in Sources */,
+				8D9589592273FE4C004AF23F /* UrlServiceConstans.swift in Sources */,
+				8D95894322739374004AF23F /* ContactListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

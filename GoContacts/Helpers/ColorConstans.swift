@@ -33,4 +33,6 @@ struct Color {
     static let gray = UIColor(rgb: 0x4A4A4A)
     static let white = UIColor.white
     static let lightGrey =  UIColor(rgb: 0x4A4A4A).withAlphaComponent(0.5)
+    static let borderColor =  UIColor(rgb: 0xF0F0F0)
+
 }

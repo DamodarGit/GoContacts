@@ -6,13 +6,23 @@ final class ContactListRouter: ContactListRouterProtocol {
     static func createModule() -> UIViewController {
         let view = StoryBoard.main.instantiateViewController(withIdentifier: Controller.contactList) as! ContactListView
         view.title = "Contact"
-        let Router = ContactListRouter()
+        let router = ContactListRouter()
         let interactor = ContactListInteractor()
-        let presenter = ContactListPresenter(Router: Router, interactor: interactor)
-        Router.view = view
+        let presenter = ContactListPresenter(router: router, interactor: interactor)
+        router.view = view
         view.presenter = presenter
         presenter.view = view
         interactor.output = presenter
         return view
+    }
+    
+    func showDetailView(on navigationController: UINavigationController, with contact: Contact) {
+        let detailView = ContactDetailRouter.createModule(with: contact)
+        navigationController.pushViewController(detailView, animated: true)
+    }
+    
+    func showAddContact(on navigationController: UINavigationController) {
+        let contactView = ContactEditRouter.createModule(with: .add)
+        navigationController.pushViewController(contactView, animated: true)
     }
 }

@@ -10,7 +10,7 @@ protocol ContactEditInteractorProtocol {
 protocol ContactEditPresenterProtocol {
     var view: ContactEditViewProtocol? { get }
     var interactor: ContactEditInteractorProtocol { get }
-    var Router: ContactEditRouterProtocol { get }
+    var router: ContactEditRouterProtocol { get }
     func onViewDidLoad()   
 }
 

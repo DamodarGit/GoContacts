@@ -1,11 +1,11 @@
 
 final class ContactEditPresenter: ContactEditPresenterProtocol {
     var interactor: ContactEditInteractorProtocol
-    var Router: ContactEditRouterProtocol
+    var router: ContactEditRouterProtocol
     weak var view: ContactEditViewProtocol?
     
-    init(Router: ContactEditRouterProtocol, interactor: ContactEditInteractorProtocol) {
-        self.Router = Router
+    init(router: ContactEditRouterProtocol, interactor: ContactEditInteractorProtocol) {
+        self.router = router
         self.interactor = interactor
     }
     
