@@ -227,8 +227,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="73" placeholderIntrinsicHeight="44" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aXY-eP-cUj">
                                 <rect key="frame" x="8" y="48" width="73" height="44"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_back" translatesAutoresizingMaskIntoConstraints="NO" id="ftI-3d-Lz0">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_back" translatesAutoresizingMaskIntoConstraints="NO" id="ftI-3d-Lz0">
                                         <rect key="frame" x="0.0" y="0.0" width="14" height="44"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="udd-SM-mmX" appends="YES" id="9WV-nj-rCK"/>
+                                        </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-yY-5hy" customClass="Button" customModule="GoContacts" customModuleProvider="target">
                                         <rect key="frame" x="18" y="0.0" width="55" height="44"/>
@@ -304,6 +308,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wv9-sF-abg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="udd-SM-mmX">
+                    <connections>
+                        <action selector="leftBarButtonAction" destination="EBf-ck-mvI" id="zzi-e3-SmO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="697" y="27"/>
         </scene>
