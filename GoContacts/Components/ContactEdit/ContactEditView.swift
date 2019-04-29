@@ -103,7 +103,7 @@ extension ContactEditView :  UITextFieldDelegate {
 
 extension ContactEditView: ContactEditViewProtocol {
     func showError(_ error: String) {
-        
+        self.view.showBanner(.failed, "Please try after some time")
     }
     
 }

@@ -88,10 +88,14 @@ extension ContactDetailView: ContactDetailViewProtocol {
         self.loader.hide()
         self.contact = contact
         self.createDataDict()
+        self.view.showBanner(.success, "User details fetched")
+
     }
     
     func show(_ error: String) {
         self.loader.hide()
+        self.view.showBanner(.failed, "Please try after some time")
+
     }
     
 }

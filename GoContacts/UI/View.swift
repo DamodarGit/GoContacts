@@ -43,3 +43,56 @@ class ViewBorderd: UIView {
         
     }
 }
+
+enum BannerView {
+    case success
+    case failed
+}
+
+extension UIView {
+    func showBanner(_ type: BannerView, _ title: String) {
+        DispatchQueue.main.async {
+            let window = UIApplication.shared.windows.first
+            let rect = CGRect(x: 0, y: -75, width: Int((window?.bounds.width)!), height: 75)
+            
+            let view = UIView(frame: rect)
+            window?.addSubview(view)
+            view.backgroundColor = Color.white.withAlphaComponent(1)
+            view.layer.borderColor = Color.green.cgColor
+            view.layer.borderWidth = 1
+            view.layer.zPosition = 1
+            let label = UILabel(frame: CGRect(x: 54, y: 21, width: view.frame.size.width - 100, height: 44))
+            label.numberOfLines = 3
+            view.addSubview(label)
+            label.text = title
+            
+            let image: UIImage?
+            
+            switch type {
+            case .success:
+                image = UIImage(named: "success")
+                label.textColor = Color.green
+            case .failed:
+                image = UIImage(named: "failed")
+                label.textColor = Color.lightGrey
+            }
+            
+            let imageview  = UIImageView(image: image)
+            view.addSubview(imageview)
+            imageview.frame = CGRect(x: 8, y: 24, width: 34, height: 34)
+            
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 4, initialSpringVelocity: 4, options: .curveEaseOut, animations: {
+                let rect = CGRect(x: 0, y: 0, width: Int((window?.bounds.width)!), height: 75)
+                view.frame = rect
+                
+            }) { (done) in
+                self.layoutIfNeeded()
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2500)) {
+                view.removeFromSuperview()
+            }
+
+    }
+}
+}

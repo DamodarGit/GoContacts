@@ -92,10 +92,15 @@ extension ContactListView: ContactListViewProtocol {
         self.count = contacts.count
         self.contacts = contacts
         createListAndUpdateTable()
+       
+          DispatchQueue.main.async {
+            self.view.showBanner(.success, "User details updated")
+        }
     }
     
     func didFailedWith(eror: String) {
         self.loader.hide()
+        self.view.showBanner(.failed, "Please try after some time")
     }
     
     func showLoader() {
